@@ -110,7 +110,7 @@ var slideIndex = 1
 showSlides();
 
 function showSlides() {
-	var slideShowLinks = ['bridge.jpg', 'corsons.jpg', 'deuville.jpg', 'old-strathmere.jpg', 'IMG_6341.PNG'];
+	var slideShowLinks = ['./bridge.jpg', './corsons.jpg', './deuville.jpg', './old-strathmere.jpg', './IMG_6341.PNG'];
 	$slideshow = $('#slideshow');
 	$slideshow.addClass('fade');
 	setTimeout(function() {
