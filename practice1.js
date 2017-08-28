@@ -12,15 +12,15 @@ contactLink.addEventListener('click', contactFocus, false);
 
 /*cons friends = [
 	{title: ‘yum’,
-	src: ‘blahblah.com;
+	src: ‘hello.com;
 	}
-	{title:’shit’
-	src: ‘fuckfuck.com’
+	{title:’yo’
+	src: ‘hellotoyou.com’
 	}
 ]
 var friend = friends[1]
 
-friend.title would return ‘shit’
+friend.title would return ‘yo’
 */
 
 
@@ -73,7 +73,7 @@ function xyz(data) {
 $(document).ready(function() {
 	$.ajax({
 		type: 'GET',
-	    url: "http://magicseaweed.com/api/1d110434ae41701c54d0adec36cf5bb9/forecast/?spot_id=1281&units=us&fields=localTimestamp,wind.speed,wind.compassDirection,condition.temperature,swell.components.primary.height&callback=xyz",
+	    url: "https://magicseaweed.com/api/1d110434ae41701c54d0adec36cf5bb9/forecast/?spot_id=1281&units=us&fields=localTimestamp,wind.speed,wind.compassDirection,condition.temperature,swell.components.primary.height&callback=xyz",
 	 
 	    // The name of the callback parameter
 	    jsonp: "xyz",
