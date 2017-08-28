@@ -52,7 +52,6 @@ body {
 #weather {
 	position: fixed;
 	width: 100%;
-	height: 150px;
 	text-align: center;
 	bottom: 0;
 	font-size: 0.75rem;
@@ -60,6 +59,7 @@ body {
   	background: rgba(0, 0, 0, 0.90);
   	color: white;
   	overflow: hidden;
+  	z-index: 1 !important;
 }
 
 #weather div {
@@ -74,7 +74,7 @@ body {
 }
 
 #weather-conditions {
-	width: 70%;
+	width: 80%;
 }
 
 #weather-conditions table {
@@ -93,7 +93,6 @@ body {
 #weather-conditions table td {
 	font-size: 0.75rem;
 	color: white;
-	overflow: hidden;
 }
 
 #weather #x-box {
@@ -332,7 +331,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 695px) {
+@media only screen and (max-width: 790px) {
 
 	/*Header section responsive */
 	header {
@@ -356,6 +355,10 @@ footer {
 
 	/*Jumbo section */
 
+	#jumbo {
+		min-height: 200px;
+	}
+
 	#jumbo h1 {
 		font-size: 4.5rem;
 	}
@@ -378,9 +381,42 @@ footer {
 	#main p {
 		font-size: 0.75rem;
 	}
+
+	/*Weather section */
+	#weather h2 {
+		font-size: 1.25rem;
+	}
+
+	#weather #weather-conditions {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#weather #weather-conditions th {
+		font-size: 0.85rem;
+		padding: 0;
+
+	}
+
+	#weather #weather-conditions td {
+		font-size: 0.5rem;
+	}
 } 
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
+	
+	header a {
+		font-size: 1rem;
+	}
+
+	header li {
+		padding: 0 0.5rem;
+	}
+
+	#jumbo h1 {
+		font-size: 3.5rem;
+	}
+
 	#newsletter h1 {
 		margin-bottom: 10px;
 	}
@@ -405,17 +441,8 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 406px) {
 	header a {
-		font-size: 0.85rem;
+		font-size: 0.75rem;
 	}
-
-	header li {
-		padding: 0 0.5rem;
-	}
-
-	#jumbo h1 {
-		font-size: 3.5rem;
-	}
-
 }
