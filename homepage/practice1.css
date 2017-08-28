@@ -258,7 +258,7 @@ header .active {
 }
 #media #slideshow {
 	height: 400px;
-	background: url('images/old-strathmere.jpg') no-repeat center center;
+	background: url('/images/old-strathmere.jpg') no-repeat center center;
 	background-size: cover;
 }
 
