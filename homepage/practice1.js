@@ -115,7 +115,8 @@ $(document).ready(function() {
 function showSlides() {
 	var slideShowLinks = ['/images/bridge.jpg', '/images/corsons.jpg', '/images/deuville.jpg', '/images/old-strathmere.jpg', '/images/IMG_6341.PNG'];
 	$slideshow = $('#slideshow');
-	$slideshow.addClass('fade');
+	$slideshow.load(function() {
+		$slideshow.addClass('fade');
 	setTimeout(function() {
 		$slideshow.removeClass('fade');
 	}, 1900);
@@ -132,3 +133,5 @@ function showSlides() {
     } 
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+	}
+	
