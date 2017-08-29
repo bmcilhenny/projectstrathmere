@@ -258,7 +258,9 @@ header .active {
 }
 #media #slideshow {
 	height: 400px;
-	background: url("images/IMG_6341.jpg") no-repeat center center;
+	background-image: url("images/IMG_6341.jpg");
+	background-repeat: no-repeat;
+	 background-position: center; 
 	background-size: cover;
 }
 
