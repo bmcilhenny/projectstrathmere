@@ -12,15 +12,15 @@ contactLink.addEventListener('click', contactFocus, false);
 
 /*cons friends = [
 	{title: ‘yum’,
-	src: ‘hello.com;
+	src: ‘blahblah.com;
 	}
-	{title:’yo’
-	src: ‘hellotoyou.com’
+	{title:’shit’
+	src: ‘fuckfuck.com’
 	}
 ]
 var friend = friends[1]
 
-friend.title would return ‘yo’
+friend.title would return ‘shit’
 */
 
 
@@ -47,7 +47,7 @@ function calcStrathmereTime(offset) {
 }
 
 
-function xyz(data) {
+function checkTime(data) {
 	var $weather = $('#weather-conditions');
 	var curr = data[0];
 	console.log(curr.localTimestamp)
@@ -73,7 +73,7 @@ function xyz(data) {
 $(document).ready(function() {
 	$.ajax({
 		type: 'GET',
-	    url: "https://magicseaweed.com/api/1d110434ae41701c54d0adec36cf5bb9/forecast/?spot_id=1281&units=us&fields=localTimestamp,wind.speed,wind.compassDirection,condition.temperature,swell.components.primary.height&callback=xyz",
+	    url: "https://magicseaweed.com/api/1d110434ae41701c54d0adec36cf5bb9/forecast/?spot_id=1281&units=us&fields=localTimestamp,wind.speed,wind.compassDirection,condition.temperature,swell.components.primary.height&callback=checkTime",
 	 
 	    // The name of the callback parameter
 	    jsonp: "xyz",
@@ -106,17 +106,13 @@ $('#x-box').on('click', function() {
 //Slideshow
 
 
-
-$(document).ready(function() { 
-	var slideIndex = 1
-	showSlides();
-});
+var slideIndex = 1
+showSlides();
 
 function showSlides() {
-	var slideShowLinks = ['/images/bridge.jpg', '/images/corsons.jpg', '/images/deuville.jpg', '/images/old-strathmere.jpg', '/images/IMG_6341.PNG'];
+	var slideShowLinks = ['/images/bridge.jpg', '/images/corsons.jpg', '/images.deuville.jpg', '/images/old-strathmere.jpg', '/images/IMG_6341.PNG'];
 	$slideshow = $('#slideshow');
-	$slideshow.load(function() {
-		$slideshow.addClass('fade');
+	$slideshow.addClass('fade');
 	setTimeout(function() {
 		$slideshow.removeClass('fade');
 	}, 1900);
@@ -133,4 +129,3 @@ function showSlides() {
     } 
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
-	
