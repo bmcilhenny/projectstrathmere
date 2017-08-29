@@ -106,8 +106,11 @@ $('#x-box').on('click', function() {
 //Slideshow
 
 
-var slideIndex = 1
-showSlides();
+
+$(document).ready(function() { 
+	var slideIndex = 1
+	showSlides();
+}
 
 function showSlides() {
 	var slideShowLinks = ['/images/bridge.jpg', '/images/corsons.jpg', '/images/deuville.jpg', '/images/old-strathmere.jpg', '/images/IMG_6341.PNG'];
