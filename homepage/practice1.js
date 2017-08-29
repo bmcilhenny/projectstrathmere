@@ -14,13 +14,13 @@ contactLink.addEventListener('click', contactFocus, false);
 	{title: ‘yum’,
 	src: ‘blahblah.com;
 	}
-	{title:’shit’
-	src: ‘fuckfuck.com’
+	{title:’oh’
+	src: ‘boopboop.com’
 	}
 ]
 var friend = friends[1]
 
-friend.title would return ‘shit’
+friend.title would return ‘oh’
 */
 
 
